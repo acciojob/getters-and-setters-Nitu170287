@@ -13,8 +13,7 @@ class Person {
         
     
 }
-let person = new Person("Alice", 30)
-
+let person = new Person("John")
 class Student extends Person {
 	study(){
 		console.log(person.getName()+" is studying.")
@@ -23,12 +22,16 @@ class Student extends Person {
 
 class Teacher extends Person {
 	teach(){
-		console.log(person.getName()+" is teaching.")
+		console.log(teacher.name+" is teaching.")
 	}
 }
-let student = new Student()
+
+
+let student = new Student("Alice", 30)
 student.study()
-let teacher = new Teacher()
+// let student1 = new Student("Alice", 30)
+// student1.study()
+let teacher = new Teacher("Alice", 30)
 teacher.teach()
 
 // Do not change the code below this line
