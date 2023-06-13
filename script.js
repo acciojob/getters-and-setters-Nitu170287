@@ -7,13 +7,13 @@ class Person {
     getName() {
         return this.name;
     }
-    setName(newAge) {
+    setAge(newAge) {
         this.age = newAge;
         }
         
     
 }
-let person = new Person("Jhon")
+let person = new Person("Alice", 30)
 
 class Student extends Person {
 	study(){
