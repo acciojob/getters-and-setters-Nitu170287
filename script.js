@@ -13,21 +13,21 @@ class Person {
         
     
 }
-let person = new Person("John")
+
 class Student extends Person {
 	study(){
-		console.log(person.getName()+" is studying.")
+		console.log(${this.name}+" is studying.")
 	}
 }
 
 class Teacher extends Person {
 	teach(){
-		console.log(teacher.name+" is teaching.")
+		console.log(${this.name}+" is teaching.")
 	}
 }
 
 
-let student = new Student("Alice", 30)
+let student = new Student("Jhon", 30)
 student.study()
 // let student1 = new Student("Alice", 30)
 // student1.study()
